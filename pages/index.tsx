@@ -15,7 +15,7 @@ import { Drawer, DrawerContent } from "@/components/drawer";
 import { MdPhoneInTalk } from "react-icons/md";
 import API from "@/router/index";
 
-const phone = "0695505520";
+const phone = "212695505520";
 
 const _products = [
   {
