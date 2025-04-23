@@ -286,7 +286,7 @@ const Hero = ({ handleScroll }) => {
                 <img
                   src="https://i.ibb.co/9k5JZBSR/logo.jpg"
                   alt="Logo"
-                  className="w-10 h-10 rounded-full"
+                  className="w-20 h-20 rounded-full"
                 />
               </div>
               <h1 className="text-4xl font-bold leading-tight text-gray-900 md:text-6xl">
