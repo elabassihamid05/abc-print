@@ -380,7 +380,7 @@ const ProductDetails = ({ product }) => {
     const encodedMessage = encodeURIComponent(
       `Bonjour, je suis intéressé(e) par votre produit: ${product.title}`
     );
-    const phoneFormat = String(product.phone).slice(1);
+    const phoneFormat = String(product.phone);
     window.open(
       `https://wa.me/${phoneFormat}?text=${encodedMessage}`,
       "_blank"
