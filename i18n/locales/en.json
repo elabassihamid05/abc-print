@@ -1,0 +1,57 @@
+{
+  "application": {
+    "login": {
+      "title": "Verify your email to continue",
+      "subtitle": "We'll send you a link to your email.",
+      "email": "Email ",
+      "send": "Send me a verification link",
+      "emailSend": {
+        "text1": "Check your email",
+        "text2": "We've sent you a magic link to",
+        "text3": "Please click the link to confirm your address."
+      }
+    }
+  },
+  "user": {
+    "firstName": "FirstName",
+    "lastName": "LastName",
+    "email": "Email",
+    "phone": "Phone",
+    "gender": {
+      "title": "Gender",
+      "female": "Female",
+      "male": "male"
+    },
+    "birthday": "Birthday",
+    "about": "About",
+    "tags": "Tags",
+    "technologies": "Technologies",
+    "industries": "Industries",
+    "video-presentation": "Video Presentation",
+    "country": "Country",
+    "city": "City",
+    "address": "ddress",
+    "investment-interests": {
+      "technologies": "Technologies",
+      "industries": "Sectors",
+      "company-stages": "Company Stages",
+      "business-models": "Business Models",
+      "countries": "Countries"
+    },
+    "upload-avatar-title": "Upload Avatar",
+    "onboarding": {
+      "edit-profile": {
+        "title": "Tell us more about your Profile",
+        "subtitle": "Complete your profile by adding more details about you.",
+        "save-button": "Save Changes",
+        "continue-button": "Save And Continue"
+      },
+      "edit-investor-profile": {
+        "title": "Complete your investment interests",
+        "subtitle": "Add more details about your investment interests to complete your profile as an investor.",
+        "save-button": "Save Changes",
+        "continue-button": "Save And Continue"
+      }
+    }
+  }
+}

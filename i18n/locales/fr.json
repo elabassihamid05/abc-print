@@ -1,0 +1,57 @@
+{
+  "application": {
+    "login": {
+      "title": "Vérifiez votre email pour continuer",
+      "subtitle": "Nous vous enverrons un lien sur votre adresse email.",
+      "email": "Email ",
+      "send": "Envoyez-moi un lien de vérification",
+      "emailSend": {
+        "text1": "Vérifiez votre email",
+        "text2": "Nous vous avons envoyé un lien magique à",
+        "text3": "Veuillez cliquer sur le lien pour confirmer votre adresse."
+      }
+    },
+    "user": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adress E-mail",
+      "phone": "Téléphone",
+      "gender": {
+        "title": "Genre",
+        "female": "Femme",
+        "male": "Homme"
+      },
+      "birthday": "Anniversaire",
+      "about": "Biographie",
+      "tags": "Tags",
+      "technologies": "Technologies",
+      "industries": "Industries",
+      "video-presentation": "Presentation Video",
+      "country": "Pays",
+      "city": "Ville",
+      "address": "Adresse",
+      "investment-interests": {
+        "technologies": "Technologies",
+        "industries": "Secteurs d'activité",
+        "company-stages": "Stades de développement d'entreprise",
+        "business-models": "Plans d'affaires",
+        "countries": "Pays"
+      },
+      "upload-avatar-title": "Télécharger Votre Photo",
+      "onboarding": {
+        "edit-profile": {
+          "title": "Améliorer votre profil",
+          "subtitle": "Mettre à jour vos informations en ajoutant plus de details sur votre profil",
+          "save-button": "Sauvegarder",
+          "continue-button": "Sauvegarder et continuer"
+        },
+        "edit-investor-profile": {
+          "title": "Complétez vos intérêts d'investissement",
+          "subtitle": "Ajoutez plus de détails sur vos intérêts d'investissement pour compléter votre profil en tant qu'investisseur.",
+          "save-button": "Sauvegarder",
+          "continue-button": "Sauvegarder et continuer"
+        }
+      }
+    }
+  }
+}

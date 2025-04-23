@@ -1,0 +1,1 @@
+export { default as MainPlatformLayout } from "./main-platform-layout";
