@@ -200,7 +200,7 @@ export default function ArtisanaMaroc() {
                 <a
                   href="https://www.tiktok.com/@tarikgsmphone"
                   target="_blank"
-                  className="text-gray-600 transition-colors hover:text-blue-600"
+                  className="text-gray-600 transition-colors hover:text-orange-600"
                 >
                   <svg
                     className="w-6 h-6"
@@ -255,7 +255,7 @@ export default function ArtisanaMaroc() {
                 </a>
               </div>
               <Text align="center" color="dimmed">
-                © 2024 Tarik GSM Maroc. Tous droits réservés.
+                © 2024 ABCPrint Maroc. Tous droits réservés.
               </Text>
             </div>
           </Container>
@@ -267,7 +267,7 @@ export default function ArtisanaMaroc() {
 
 const Hero = ({ handleScroll }) => {
   return (
-    <section className="relative min-h-[85vh] py-10 flex items-center justify-center overflow-hidden bg-gradient-to-r from-gray-50 to-blue-50 rounded-sm">
+    <section className="relative min-h-[85vh] py-10 flex items-center justify-center overflow-hidden bg-gradient-to-r from-gray-50 to-orange-50 rounded-sm">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[url('/pattern.png')] bg-repeat bg-center" />
@@ -290,7 +290,7 @@ const Hero = ({ handleScroll }) => {
                 />
               </div>
               <h1 className="text-4xl font-bold leading-tight text-gray-900 md:text-6xl">
-                Découvrez la <span className="text-blue-600">Collection</span>
+                Découvrez la <span className="text-orange-600">Collection</span>
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-gray-600">
                 Découvrez notre collection unique de t-shirts personnalisables
@@ -307,10 +307,10 @@ const Hero = ({ handleScroll }) => {
             >
               <button
                 onClick={handleScroll}
-                className="relative inline-flex items-center px-8 py-3 overflow-hidden text-white transition-all duration-300 bg-blue-600 rounded-full group hover:bg-blue-700"
+                className="relative inline-flex items-center px-8 py-3 overflow-hidden text-white transition-all duration-300 bg-orange-600 rounded-full group hover:bg-orange-700"
               >
                 <span className="relative z-10">Découvrir nos produits</span>
-                <div className="absolute inset-0 transition-transform duration-300 origin-left transform scale-x-0 bg-blue-700 group-hover:scale-x-100" />
+                <div className="absolute inset-0 transition-transform duration-300 origin-left transform scale-x-0 bg-orange-700 group-hover:scale-x-100" />
               </button>
             </motion.div>
           </div>
@@ -346,7 +346,10 @@ const ProductCard = ({ product, onClick }) => {
     >
       <div className="overflow-hidden h-[250px] w-full">
         <img
-          src={product.image}
+          src={
+            product.image ||
+            "https://dummyimage.com/600x400/000/fff&text=soon..."
+          }
           alt={product.title}
           className="object-contain w-full h-full transition-transform duration-300 transform bg-gray-100 group-hover:scale-110"
         />
@@ -358,23 +361,25 @@ const ProductCard = ({ product, onClick }) => {
             dangerouslySetInnerHTML={{ __html: product.title }}
             className="text-xl font-semibold"
           />
-          <Badge className="px-3 py-1 text-sm text-blue-800 bg-blue-100 rounded-full">
-            {product.category}
-          </Badge>
+          {product.category && (
+            <Badge className="px-3 py-1 text-sm text-orange-800 bg-orange-100 rounded-full">
+              {product.category}
+            </Badge>
+          )}
         </div>
 
         <div
-          className="mb-4 text-gray-600 line-clamp-3"
+          className="mt-auto mb-4 text-gray-600 line-clamp-3"
           dangerouslySetInnerHTML={{ __html: product.shortDescription }}
         />
 
         <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-blue-600">
+          <span className="text-2xl font-bold text-orange-600">
             {product.price}
           </span>
           <button
             onClick={onClick}
-            className="px-4 py-2 text-white transition-colors bg-blue-600 rounded-lg hover:bg-blue-700"
+            className="px-4 py-2 text-white transition-colors bg-orange-600 rounded-lg hover:bg-orange-700"
           >
             Voir détails
           </button>
@@ -414,10 +419,10 @@ const ProductDetails = ({ product }) => {
             className="text-4xl font-bold text-gray-900"
           />
           <div className="flex items-center gap-4">
-            <Badge className="px-6 py-2 text-lg font-medium text-blue-800 bg-blue-100 rounded-full">
+            <Badge className="px-6 py-2 text-lg font-medium text-orange-800 bg-orange-100 rounded-full">
               {product.category}
             </Badge>
-            <span className="text-3xl font-bold text-blue-600">
+            <span className="text-3xl font-bold text-orange-600">
               {product.price}
             </span>
           </div>
@@ -456,9 +461,9 @@ const ProductDetails = ({ product }) => {
 
             <button
               onClick={callPhoneNumber}
-              className="relative px-8 py-4 overflow-hidden bg-blue-600 group rounded-xl"
+              className="relative px-8 py-4 overflow-hidden bg-orange-600 group rounded-xl"
             >
-              <div className="absolute inset-0 transition-transform duration-300 origin-left transform scale-x-0 bg-blue-700 group-hover:scale-x-100" />
+              <div className="absolute inset-0 transition-transform duration-300 origin-left transform scale-x-0 bg-orange-700 group-hover:scale-x-100" />
               <div className="relative z-10 flex items-center justify-center gap-3 text-white">
                 <MdPhoneInTalk size={24} className="shrink-0" />
                 <span className="text-lg font-medium">Appeler</span>
@@ -496,8 +501,8 @@ const ProductDetails = ({ product }) => {
           </div>
 
           {/* Contact Information */}
-          <div className="p-6 border border-blue-100 bg-blue-50 rounded-xl">
-            <div className="flex items-center gap-4 text-blue-800">
+          <div className="p-6 border border-orange-100 bg-orange-50 rounded-xl">
+            <div className="flex items-center gap-4 text-orange-800">
               <MdPhoneInTalk size={24} />
               <span className="text-lg font-medium">{product.phone}</span>
             </div>
